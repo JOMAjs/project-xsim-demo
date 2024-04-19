@@ -1,0 +1,353 @@
+@charset "utf-8";.page {
+    color: #000;
+    padding: 10px;
+    display: none
+}
+
+div.pageMove {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-align: left
+}
+
+button,input,select {
+    padding: 5px;
+    font-family: Arial,sans-serif;
+    border: solid 1px #ccc;
+    margin: 5px 0;
+    border-radius: 3px
+}
+
+input:focus,select:focus {
+    border: solid 1px #09f
+}
+
+label {
+    margin: 0 10px
+}
+
+.dySetting {
+    background-color: #09f;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    position: relative
+}
+
+.dySetting .closeButton {
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px
+}
+
+.dySetting .closeButton:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer
+}
+
+.dySetting.disable .closeButton {
+    color: grey
+}
+
+.dySetting.disable .closeButton:hover {
+    background-color: #ededed;
+    color: grey
+}
+
+.dySetting.selected {
+    background-color: #ff7d00
+}
+
+.dySetting.disable {
+    background-color: #fcfcfc;
+    color: #bebebe;
+    border: solid 1px #ebebeb
+}
+
+.sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.sortable .dySetting {
+    cursor: move;
+    display: block;
+    overflow: auto
+}
+
+.sortable .dySetting span {
+    line-height: 32px;
+    vertical-align: middle
+}
+
+#tree-view {
+    border: solid 1px #ccc;
+    float: left;
+    width: 15%;
+    margin: 0;
+    overflow: auto;
+    padding-left: 5px
+}
+
+#tree-view ul {
+    list-style-type: none;
+    padding: 0
+}
+
+#tree-view ul li {
+    margin-left: 20px
+}
+
+.treeElement {
+    color: #666;
+    cursor: pointer;
+    padding-left: 5px
+}
+
+.treeElement:hover {
+    background-color: #ddd
+}
+
+.treeElement.selected {
+    color: #fff;
+    background-color: #ff7d00
+}
+
+#tree-view div.page-index {
+    padding-left: 5px
+}
+
+.bc {
+    margin: 10px 0
+}
+
+input[type=button] {
+    margin: 0 5px
+}
+
+.buttonBox {
+    margin: 10px 0;
+    text-align: right
+}
+
+.group {
+    margin: 10px 0
+}
+
+span.group {
+    display: inline-block;
+    margin: 5px 0
+}
+
+fieldset {
+    margin-bottom: 10px
+}
+
+span.unit {
+    margin-left: .5em
+}
+
+img {
+    margin-left: 10px
+}
+
+#guide-area {
+    box-sizing: border-box;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex
+}
+
+div.imagebox {
+    float: left;
+    padding: 9px;
+    margin: 4px
+}
+
+.imagebox span {
+    display: block;
+    text-align: center
+}
+
+#client-area {
+    box-sizing: border-box;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex
+}
+
+#threeD-view {
+    float: left;
+    position: relative;
+    -webkit-flex: 1;
+    flex: 1;
+    width: 100%
+}
+
+.view-splitter {
+    width: 3px;
+    padding: 0;
+    cursor: ew-resize;
+    flex: 0 0 auto
+}
+
+#control-view {
+    float: left;
+    width: 35%;
+    margin: 0;
+    overflow: auto
+}
+
+div.clear {
+    clear: both
+}
+
+#canvas-3d {
+    border-style: none;
+    width: 100%;
+    display: block
+}
+
+#canvas-3d-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%
+}
+
+#fileDropHandler {
+    border: 2px dotted #a9a9a9;
+    height: 100px;
+    width: 100%;
+    color: #92aab0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%
+}
+
+#fileChooser {
+    width: 100%;
+    margin: 0;
+    border-style: none
+}
+
+#message-area {
+    border: solid 1px #a9a9a9;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 3em
+}
+
+.dialog-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0
+}
+
+img.formula {
+    vertical-align: middle
+}
+
+.icon {
+    height: 32px;
+    margin-left: 5px;
+    padding: 0;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: #09f
+}
+
+.circle:hover {
+    background-color: #007fff
+}
+
+.circle.selected {
+    background-color: #ff7d00
+}
+
+.circle.disable {
+    background-color: #ebebeb;
+    cursor: default
+}
+
+.eye {
+    height: 1em;
+    vertical-align: middle;
+    margin: 0 5px 0 0
+}
+
+h2 {
+    margin: 0 0 15px
+}
+
+#pageMessage {
+    display: none;
+    padding-top: 15px;
+    padding-left: 15px
+}
+
+.ui-progressbar {
+    position: relative
+}
+
+.progress-label {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 5px
+}
+
+#Save-thumbnail {
+    border: 1px solid #ccc;
+    margin: 0;
+    max-width: 400px;
+    width: 100%;
+    cursor: pointer
+}
+
+th {
+    font-weight: 400;
+    text-align: left;
+    padding: 5px 0
+}
+
+td,th {
+    width: auto;
+    display: block;
+    white-space: nowrap
+}
+
+table.surfaceTensions td {
+    padding: 5px
+}
+
+@media(min-width: 1366px) {
+    td,th {
+        padding:0;
+        display: table-cell
+    }
+}
+
+.no-responsive tr th {
+    padding: 0;
+    display: table-cell
+}
+
+.no-responsive tr td {
+    padding: 0;
+    display: table-cell
+}
